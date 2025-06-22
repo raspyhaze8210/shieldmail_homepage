@@ -24,26 +24,21 @@ const HeroSection = () => {
           </div>
         </div>
         
-        {/* Dashboard Preview Section */}
-        <div className="mt-20 max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-white mb-3">
-              <span className="gradient-text">ShieldMail Dashboard</span>
-            </h3>
-            <p className="text-gray-400">
-              Manage all your temporary email addresses from one powerful dashboard
-            </p>
-          </div>
-          
-          <div className="dashboard-container">
-            <div className="dashboard-frame">
-              <div className="dashboard-image wobble-container cursor-pointer">
+        {/* Dashboard Preview Section - New Modern Style */}
+        <div className="mt-20 max-w-7xl mx-auto">
+          <div className="dashboard-showcase">
+            <div className="dashboard-mockup">
+              <div className="dashboard-screen">
                 <img 
                   src="/images/dashboard-preview.png" 
-                  alt="ShieldMail Dashboard - Manage your temporary email addresses"
-                  className="w-full h-auto object-cover wobble-image"
+                  alt="ShieldMail Dashboard Interface"
+                  className="dashboard-image-modern"
                 />
+                <div className="dashboard-overlay"></div>
+                <div className="dashboard-glow"></div>
               </div>
+              <div className="dashboard-base"></div>
+              <div className="dashboard-stand"></div>
             </div>
           </div>
         </div>
@@ -52,7 +47,7 @@ const HeroSection = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-white mb-3">
-              <span className="gradient-text">Live Email Preview</span>
+              <span className="gradient-text">Email Preview</span>
             </h3>
             <p className="text-gray-400">
               See how emails are forwarded and managed in real-time
