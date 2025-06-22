@@ -86,18 +86,6 @@ const FeaturesSection = () => {
         "Easy DNS setup",
         "Professional appearance"
       ]
-    },
-    {
-      icon: Mail,
-      title: "Email Preview & Actions",
-      description: "Preview emails directly in the dashboard and take quick actions like reply, forward, or delete.",
-      color: "blue",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.19.48@2x.png",
-      benefits: [
-        "Inline email preview",
-        "Quick action buttons",
-        "Seamless email management"
-      ]
     }
   ];
 
@@ -151,16 +139,16 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Image */}
+              {/* Image Frame */}
               <div className="flex-1 relative group">
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4 shadow-xl overflow-hidden">
-                  <div className="relative overflow-hidden" style={{ borderRadius: '0.5rem' }}>
+                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl">
+                  <div className="relative overflow-hidden rounded-xl bg-slate-900/50" style={{ aspectRatio: '16/10' }}>
                     <img 
                       src={feature.image} 
                       alt={feature.title}
-                      className="w-full h-auto object-contain"
-                      style={{ borderRadius: '0.5rem' }}
+                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
                   </div>
                 </div>
               </div>

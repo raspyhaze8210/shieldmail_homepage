@@ -24,6 +24,7 @@ const Header = () => {
             <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">How It Works</a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
+            <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link>
             <a href="#faq" className="text-gray-300 hover:text-white transition-colors">FAQ</a>
           </nav>
           
@@ -54,6 +55,7 @@ const Header = () => {
             <a href="#features" className="block text-gray-300 hover:text-white transition-colors py-2">Features</a>
             <a href="#how-it-works" className="block text-gray-300 hover:text-white transition-colors py-2">How It Works</a>
             <a href="#pricing" className="block text-gray-300 hover:text-white transition-colors py-2">Pricing</a>
+            <Link to="/about" className="block text-gray-300 hover:text-white transition-colors py-2">About</Link>
             <a href="#faq" className="block text-gray-300 hover:text-white transition-colors py-2">FAQ</a>
             <a href="https://app.shieldmail.site/auth" className="block text-gray-300 hover:text-white transition-colors py-2">Login</a>
           </div>
