@@ -17,28 +17,14 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Feature Image Containers - No Frames */
+/* Feature Image Containers - With Reduced Borders */
 .feature-image-container {
   perspective: 1000px;
 }
 
-.feature-image-frame {
-  min-height: 300px;
-  max-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .feature-image {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
   transition: transform 0.3s ease-out;
   transform-style: preserve-3d;
-  border-radius: 12px;
 }
 
 /* Wobbling effect for feature images */

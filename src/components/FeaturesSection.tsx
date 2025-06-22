@@ -139,15 +139,18 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Clean Image - No Frames or Borders */}
-              <div className="flex-1 relative group feature-image-container">
-                <div className="feature-image-frame">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="feature-image"
-                    loading="lazy"
-                  />
+              {/* Image with Frame and Reduced Border */}
+              <div className="flex-1 relative group">
+                <div className="bg-slate-800/25 backdrop-blur-sm border border-slate-700/25 rounded-2xl p-2 shadow-xl overflow-hidden">
+                  <div className="relative overflow-hidden feature-image-container" style={{ borderRadius: '0.5rem' }}>
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title}
+                      className="w-full h-auto object-contain feature-image"
+                      style={{ borderRadius: '0.5rem' }}
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
