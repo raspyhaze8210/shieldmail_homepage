@@ -139,9 +139,9 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Image with Frame and Reduced Border */}
+              {/* Image with Frame and Reduced Border - Original Size */}
               <div className="flex-1 relative group">
-                <div className="bg-slate-800/25 backdrop-blur-sm border border-slate-700/25 rounded-2xl p-2 shadow-xl overflow-hidden">
+                <div className="bg-slate-800/25 backdrop-blur-sm border border-slate-700/25 rounded-2xl p-4 shadow-xl overflow-hidden">
                   <div className="relative overflow-hidden feature-image-container" style={{ borderRadius: '0.5rem' }}>
                     <img 
                       src={feature.image} 
