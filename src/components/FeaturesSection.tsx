@@ -139,18 +139,15 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Image Frame with Wobbling Effect */}
+              {/* Clean Image - No Frames or Borders */}
               <div className="flex-1 relative group feature-image-container">
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4 shadow-xl transition-all duration-300 group-hover:shadow-2xl">
-                  <div className="relative overflow-hidden rounded-xl bg-slate-900/30 feature-image-frame">
-                    <img 
-                      src={feature.image} 
-                      alt={feature.title}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 feature-image"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none"></div>
-                  </div>
+                <div className="feature-image-frame">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title}
+                    className="feature-image"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
