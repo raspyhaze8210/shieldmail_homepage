@@ -24,21 +24,30 @@ const HeroSection = () => {
           </div>
         </div>
         
-        {/* Dashboard Preview Section - New Modern Style */}
+        {/* Chrome Browser Window Dashboard Preview */}
         <div className="mt-20 max-w-7xl mx-auto">
-          <div className="dashboard-showcase">
-            <div className="dashboard-mockup">
-              <div className="dashboard-screen">
-                <img 
-                  src="/images/dashboard-preview.png" 
-                  alt="ShieldMail Dashboard Interface"
-                  className="dashboard-image-modern"
-                />
-                <div className="dashboard-overlay"></div>
-                <div className="dashboard-glow"></div>
+          <div className="browser-showcase">
+            <div className="browser-window">
+              <div className="browser-glow"></div>
+              <div className="browser-frame">
+                <div className="browser-header">
+                  <div className="browser-controls">
+                    <div className="browser-control control-close"></div>
+                    <div className="browser-control control-minimize"></div>
+                    <div className="browser-control control-maximize"></div>
+                  </div>
+                  <div className="browser-address-bar">
+                    🔒 https://app.shieldmail.site/dashboard
+                  </div>
+                </div>
+                <div className="browser-content">
+                  <img 
+                    src="/images/dashboard-preview.png" 
+                    alt="ShieldMail Dashboard Interface"
+                    className="dashboard-image-chrome"
+                  />
+                </div>
               </div>
-              <div className="dashboard-base"></div>
-              <div className="dashboard-stand"></div>
             </div>
           </div>
         </div>
