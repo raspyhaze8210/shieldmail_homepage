@@ -17,15 +17,43 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Override Tailwind p-6 padding */
-.p-6 {
-  padding: 0.5rem;
-}
-.p-4 {
-  padding: 0.5rem;
+/* Feature Image Frames */
+.feature-image-container {
+  perspective: 1000px;
 }
 
-/* Wobble effect for dashboard image */
+.feature-image-frame {
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* Wobbling effect for feature images */
+.feature-image-container:hover .feature-image {
+  animation: featureWobble 0.6s ease-in-out;
+}
+
+@keyframes featureWobble {
+  0% { transform: rotateX(0deg) rotateY(0deg) scale(1); }
+  25% { transform: rotateX(3deg) rotateY(-3deg) scale(1.02); }
+  50% { transform: rotateX(-3deg) rotateY(3deg) scale(1.05); }
+  75% { transform: rotateX(3deg) rotateY(-3deg) scale(1.02); }
+  100% { transform: rotateX(0deg) rotateY(0deg) scale(1); }
+}
+
+/* Mouse follow wobble effect for dashboard */
 .wobble-container {
   perspective: 1000px;
 }

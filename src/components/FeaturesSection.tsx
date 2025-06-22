@@ -8,7 +8,7 @@ const FeaturesSection = () => {
       title: "Disposable Email Addresses",
       description: "Create unlimited temporary email addresses that forward to your real inbox. Perfect for signups, trials, and online shopping.",
       color: "primary",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.09.28@2x.png",
+      image: "/images/disposable-emails.png",
       benefits: [
         "Custom email prefixes",
         "Multiple domain options", 
@@ -20,7 +20,7 @@ const FeaturesSection = () => {
       title: "Email Tags & Organization",
       description: "Organize your emails with smart tagging system. Categorize and manage your temporary addresses efficiently.",
       color: "secondary",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.10.04@2x.png",
+      image: "/images/email-tags.png",
       benefits: [
         "Smart email tagging",
         "Category organization",
@@ -32,7 +32,7 @@ const FeaturesSection = () => {
       title: "Bulk Address Creation",
       description: "Create multiple ShieldMail addresses at once for different purposes. Streamline your privacy protection workflow.",
       color: "green",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.10.14@2x.png",
+      image: "/images/bulk-creation.png",
       benefits: [
         "Bulk address generation",
         "Batch management tools",
@@ -44,7 +44,7 @@ const FeaturesSection = () => {
       title: "Transfer & Management",
       description: "Transfer ownership of ShieldMail addresses and manage forwarding settings with advanced controls.",
       color: "yellow",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.16.30@2x.png",
+      image: "/images/transfer-management.png",
       benefits: [
         "Address ownership transfer",
         "Advanced forwarding controls",
@@ -56,7 +56,7 @@ const FeaturesSection = () => {
       title: "Forwarding Configuration",
       description: "Configure multiple forwarding addresses and manage email routing with precision and flexibility.",
       color: "red",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.17.31@2x.png",
+      image: "/images/forwarding-config.png",
       benefits: [
         "Multiple forwarding targets",
         "Advanced routing rules",
@@ -68,7 +68,7 @@ const FeaturesSection = () => {
       title: "Manage Your Burners",
       description: "Comprehensive dashboard to manage all your temporary email addresses with detailed analytics and controls.",
       color: "orange",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.18.07@2x.png",
+      image: "/images/manage-burners.png",
       benefits: [
         "Complete address overview",
         "Usage analytics",
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
       title: "Custom Domains",
       description: "Premium users can add their own domains for a personalized and professional email experience with the same privacy benefits.",
       color: "purple",
-      image: "/src/assets/CleanShot 2025-06-22 at 00.57.08@2x.png",
+      image: "/images/custom-domains.png",
       benefits: [
         "Use your own domain",
         "Easy DNS setup",
@@ -139,16 +139,17 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Image Frame */}
-              <div className="flex-1 relative group">
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl">
-                  <div className="relative overflow-hidden rounded-xl bg-slate-900/50" style={{ aspectRatio: '16/10' }}>
+              {/* Image Frame with Wobbling Effect */}
+              <div className="flex-1 relative group feature-image-container">
+                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4 shadow-xl transition-all duration-300 group-hover:shadow-2xl">
+                  <div className="relative overflow-hidden rounded-xl bg-slate-900/30 feature-image-frame">
                     <img 
                       src={feature.image} 
                       alt={feature.title}
-                      className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 feature-image"
+                      loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none"></div>
                   </div>
                 </div>
               </div>

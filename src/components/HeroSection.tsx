@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl">
             <div className="aspect-video overflow-hidden wobble-container cursor-pointer" style={{ padding: '0rem' }}>
               <img 
-                src="/src/assets/CleanShot 2025-06-22 at 00.15.57@2x.png" 
+                src="/images/dashboard-preview.png" 
                 alt="ShieldMail Dashboard" 
                 className="w-full h-full object-cover wobble-image"
                 style={{ padding: '0rem' }}

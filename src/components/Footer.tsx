@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <div className="w-[150px] h-12 rounded-xl flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/src/assets/image (2).png" 
+                  src="/images/logo.png" 
                   alt="ShieldMail Logo" 
                   className="w-full h-full object-contain"
                 />
