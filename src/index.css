@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Custom styles */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #38bdf8, #a855f7);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Override Tailwind p-6 padding */
+.p-6 {
+  padding: 0.5rem;
+}
+.p-4 {
+  padding: 0.5rem;
+}
+
+/* Wobble effect for dashboard image */
+.wobble-container {
+  perspective: 1000px;
+}
+
+.wobble-image {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+}
+
+.wobble-container:hover .wobble-image {
+  animation: wobble 0.5s ease-in-out;
+}
+
+@keyframes wobble {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(5deg) rotateY(-5deg); }
+  50% { transform: rotateX(-5deg) rotateY(5deg); }
+  75% { transform: rotateX(5deg) rotateY(-5deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+/* Mouse follow wobble effect */
+.wobble-container {
+  position: relative;
+}
+
+.wobble-container:hover .wobble-image {
+  animation: none;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
