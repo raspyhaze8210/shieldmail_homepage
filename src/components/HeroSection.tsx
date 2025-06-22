@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, ArrowRight } from 'lucide-react';
+import { Shield, ArrowRight, Mail, Clock } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -24,27 +24,46 @@ const HeroSection = () => {
           </div>
         </div>
         
-        {/* Dashboard Preview */}
-        <div className="mt-16 max-w-5xl mx-auto">
-          <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl">
-            <div className="aspect-video overflow-hidden wobble-container cursor-pointer" style={{ padding: '0rem' }}>
-              <img 
-                src="/images/dashboard-preview.png" 
-                alt="ShieldMail Dashboard" 
-                className="w-full h-full object-cover wobble-image"
-                style={{ padding: '0rem' }}
-              />
+        {/* Dashboard Preview Section */}
+        <div className="mt-20 max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-white mb-3">
+              <span className="gradient-text">ShieldMail Dashboard</span>
+            </h3>
+            <p className="text-gray-400">
+              Manage all your temporary email addresses from one powerful dashboard
+            </p>
+          </div>
+          
+          <div className="dashboard-container">
+            <div className="dashboard-frame">
+              <div className="dashboard-image wobble-container cursor-pointer">
+                <img 
+                  src="/images/dashboard-preview.png" 
+                  alt="ShieldMail Dashboard - Manage your temporary email addresses"
+                  className="w-full h-auto object-cover wobble-image"
+                />
+              </div>
             </div>
           </div>
         </div>
         
-        {/* Email Preview */}
-        <div className="mt-12 max-w-4xl mx-auto">
-          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center">
-                  <Shield className="text-primary-400" size={20} />
+        {/* Email Preview Section */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-white mb-3">
+              <span className="gradient-text">Live Email Preview</span>
+            </h3>
+            <p className="text-gray-400">
+              See how emails are forwarded and managed in real-time
+            </p>
+          </div>
+          
+          <div className="email-preview-container">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-500/20 to-primary-500/10 rounded-xl flex items-center justify-center">
+                  <Shield className="text-primary-400" size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Your ShieldMail address:</p>
@@ -52,38 +71,65 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="hidden sm:block">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-900/50 text-green-400 border border-green-500/30 relative">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  <div className="absolute inset-0 rounded-full bg-green-400/20 animate-ping"></div>
+                <div className="status-indicator">
+                  <div className="status-dot"></div>
+                  <div className="status-ping"></div>
                   Active
-                </span>
-              </div>
-            </div>
-            <div className="bg-slate-900/50 rounded-xl p-4 border border-slate-700/50">
-              <div className="flex items-center justify-between mb-3">
-                <div>
-                  <p className="text-sm text-gray-400">From: <span className="text-white">newsletter@example.com</span></p>
-                  <p className="text-sm text-gray-400">Subject: <span className="text-white">Your Weekly Newsletter</span></p>
                 </div>
-                <span className="text-xs text-gray-500">Just now</span>
-              </div>
-              <div className="text-sm text-gray-300">
-                Hello! This is your weekly newsletter with the latest updates and special offers...
               </div>
             </div>
-            <div className="mt-4 flex items-center justify-between">
-              <div className="flex items-center space-x-4">
-                <button className="bg-primary-600/20 text-primary-400 px-3 py-1.5 rounded-lg text-sm flex items-center space-x-1 hover:bg-primary-600/30 transition-colors">
-                  <ArrowRight size={16} className="rotate-180" />
-                  <span>Reply</span>
-                </button>
-                <button className="bg-secondary-600/20 text-secondary-400 px-3 py-1.5 rounded-lg text-sm flex items-center space-x-1 hover:bg-secondary-600/30 transition-colors">
-                  <ArrowRight size={16} />
-                  <span>Forward</span>
-                </button>
+            
+            <div className="email-preview-header">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-secondary-500/20 rounded-lg flex items-center justify-center">
+                    <Mail className="text-secondary-400" size={16} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">From: <span className="text-white">newsletter@example.com</span></p>
+                    <p className="text-sm text-gray-400">Subject: <span className="text-white">Your Weekly Newsletter</span></p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2 text-xs text-gray-500">
+                  <Clock size={14} />
+                  <span>Just now</span>
+                </div>
               </div>
-              <div className="text-sm text-gray-400">
-                Expires in: <span className="text-primary-400">24 hours</span>
+              
+              <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
+                <div className="text-sm text-gray-300 mb-4">
+                  Hello! This is your weekly newsletter with the latest updates and special offers...
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <button className="bg-primary-600/20 text-primary-400 px-3 py-1.5 rounded-lg text-sm flex items-center space-x-1 hover:bg-primary-600/30 transition-colors">
+                      <ArrowRight size={14} className="rotate-180" />
+                      <span>Reply</span>
+                    </button>
+                    <button className="bg-secondary-600/20 text-secondary-400 px-3 py-1.5 rounded-lg text-sm flex items-center space-x-1 hover:bg-secondary-600/30 transition-colors">
+                      <ArrowRight size={14} />
+                      <span>Forward</span>
+                    </button>
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    Expires in: <span className="text-primary-400 font-medium">24 hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex items-center justify-center space-x-6 text-sm text-gray-400">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span>Forwarded to your inbox</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                <span>Spam filtered</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                <span>Privacy protected</span>
               </div>
             </div>
           </div>
