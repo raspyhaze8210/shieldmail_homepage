@@ -17,6 +17,48 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Global Watermark */
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url('/images/white_circle_360x360.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect for watermark */
+body:hover::after {
+  opacity: 0.6;
+}
+
+/* Responsive watermark sizing */
+@media (max-width: 768px) {
+  body::after {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body::after {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
 /* Feature Image Frames - Thin Borders */
 .feature-image-container {
   perspective: 1000px;
