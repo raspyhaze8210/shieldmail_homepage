@@ -81,7 +81,7 @@ const HomePage = () => {
               <span className="gradient-text">How ShieldMail Works</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Protecting your privacy has never been easier. ShieldMail creates a secure barrier between you and potential spammers.
+              Protecting your identity has never been easier. ShieldMail creates a secure barrier between you and potential threats.
             </p>
           </div>
           
@@ -100,9 +100,9 @@ const HomePage = () => {
                       <path d="M12 16h.01"></path>
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-center">Create ShieldMail</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-center">Create Anonymous Email</h3>
                   <p className="text-gray-400 text-center">
-                    Sign up for a free account and create your first temporary email address in seconds.
+                    Sign up for a free account and create your first real anonymous email address in seconds.
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-center">Use It Anywhere</h3>
                   <p className="text-gray-400 text-center">
-                    Use your ShieldMail address for signups, forms, and anywhere you'd normally use your real email.
+                    Use your anonymous ShieldMail address for signups, forms, and anywhere you'd normally use your real email.
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-center">Manage & Respond</h3>
                   <p className="text-gray-400 text-center">
-                    Receive emails in your dashboard or real inbox. Reply, forward, or delete as needed.
+                    Receive emails in your dashboard or real inbox. Reply, forward, or delete as needed while staying anonymous.
                   </p>
                 </div>
               </div>
@@ -159,7 +159,7 @@ const HomePage = () => {
               <span className="gradient-text">Frequently Asked Questions</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Find answers to common questions about ShieldMail and how it can help protect your privacy.
+              Find answers to common questions about ShieldMail and how it can help protect your identity.
             </p>
           </div>
           
@@ -169,7 +169,11 @@ const HomePage = () => {
               {[
                 {
                   question: "What is ShieldMail?",
-                  answer: "ShieldMail is a secure temporary email service that allows you to create disposable email addresses. These addresses can forward messages to your real inbox while keeping your actual email address private. It's perfect for signups, online shopping, and protecting yourself from spam and data breaches."
+                  answer: "ShieldMail is an anonymous email service that allows you to create real email addresses that protect your identity. These addresses can forward messages to your real inbox while keeping your actual email address private. It's perfect for signups, online shopping, and protecting yourself from spam and data breaches."
+                },
+                {
+                  question: "Are ShieldMail addresses real email addresses?",
+                  answer: "Yes! ShieldMail creates real, fully functional email addresses that can receive and send emails just like any other email address. The difference is that they protect your identity by acting as a shield between you and the outside world."
                 },
                 {
                   question: "How does email forwarding work?",
@@ -177,19 +181,15 @@ const HomePage = () => {
                 },
                 {
                   question: "Can I reply to emails I receive?",
-                  answer: "Yes! With our premium plan, you can reply directly to emails from your real inbox, and the response will appear to come from your ShieldMail address. This maintains your privacy while allowing two-way communication. Free users can still reply by logging into the ShieldMail dashboard."
+                  answer: "Yes! With our premium plan, you can reply directly to emails from your real inbox, and the response will appear to come from your anonymous ShieldMail address. This maintains your anonymity while allowing two-way communication. Free users can still reply by logging into the ShieldMail dashboard."
                 },
                 {
-                  question: "How long do ShieldMail addresses last?",
-                  answer: "Free users can create temporary addresses that last up to 7 days. Premium users can create addresses with custom durations, including 1 month, 1 year, or even permanent addresses that never expire. You can also manually delete any address at any time if you start receiving unwanted emails."
+                  question: "How long do anonymous addresses last?",
+                  answer: "Free users can create addresses that last up to 7 days. Premium users can create addresses with custom durations, including 1 month, 1 year, or even permanent addresses that never expire. You can also manually delete any address at any time if you start receiving unwanted emails."
                 },
                 {
                   question: "Can I use my own domain?",
-                  answer: "Yes, premium users can add their own custom domains to ShieldMail. This gives you a more professional appearance while still maintaining all the privacy benefits. We provide simple DNS setup instructions, and our system will verify your domain automatically once the records are in place."
-                },
-                {
-                  question: "Is ShieldMail secure?",
-                  answer: "Absolutely. ShieldMail uses industry-standard encryption for all data, both in transit and at rest. We don't store your emails longer than necessary, and we never read or analyze your email content. Our system is designed with privacy as the top priority, and we regularly update our security measures to protect against new threats."
+                  answer: "Yes, premium users can add their own custom domains to ShieldMail. This gives you a more professional appearance while still maintaining all the anonymity benefits. We provide simple DNS setup instructions, and our system will verify your domain automatically once the records are in place."
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 transition-all duration-300">
@@ -207,17 +207,17 @@ const HomePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="gradient-text">Ready to Take Control of Your Privacy?</span>
+              <span className="gradient-text">Ready to Protect Your Identity?</span>
             </h2>
             <p className="text-xl text-gray-300 mb-10">
-              Join thousands of users who trust ShieldMail to protect their real email address from spam, data breaches, and unwanted messages.
+              Join thousands of users who trust ShieldMail to protect their real email address from spam, data breaches, and unwanted tracking.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <a href="https://app.shieldmail.site/auth" className="w-full sm:w-auto bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/20 flex items-center justify-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
-                <span>Get Started Free</span>
+                <span>Create Anonymous Email</span>
               </a>
               <a href="#pricing" className="w-full sm:w-auto bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 text-white font-medium py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

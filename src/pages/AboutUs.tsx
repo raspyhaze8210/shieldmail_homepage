@@ -19,7 +19,7 @@ const AboutUs = () => {
               <span className="gradient-text">About ShieldMail</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Protecting your digital privacy, one email at a time. We believe everyone deserves control over their personal information.
+              Protecting your digital identity, one email at a time. We believe everyone deserves control over their personal information.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const AboutUs = () => {
                     everyone should have the right to protect their personal email address from spam, data breaches, and unwanted intrusions.
                   </p>
                   <p className="text-lg text-gray-300 leading-relaxed">
-                    We're building the most secure, user-friendly temporary email service that empowers individuals and businesses 
+                    We're building the most secure, user-friendly anonymous email service that empowers individuals and businesses 
                     to take control of their digital footprint without sacrificing convenience.
                   </p>
                 </div>
@@ -178,7 +178,7 @@ const AboutUs = () => {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-3">The Solution</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Existing temporary email services were either unreliable, insecure, or too complicated for everyday use. 
+                      Existing anonymous email services were either unreliable, insecure, or too complicated for everyday use. 
                       Rohit realized there was a need for a professional-grade service that was both secure and user-friendly. 
                       ShieldMail was born from this vision.
                     </p>

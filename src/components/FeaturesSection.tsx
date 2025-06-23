@@ -5,20 +5,20 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Shield,
-      title: "Disposable Email Addresses",
-      description: "Create unlimited temporary email addresses that forward to your real inbox. Perfect for signups, trials, and online shopping.",
+      title: "Anonymous Email Addresses",
+      description: "Create unlimited real anonymous email addresses that forward to your inbox. Perfect for signups, trials, and online shopping while protecting your identity.",
       color: "primary",
       image: "/images/disposable-emails.png",
       benefits: [
         "Custom email prefixes",
         "Multiple domain options", 
-        "Flexible expiration times"
+        "Real email addresses"
       ]
     },
     {
       icon: Mail,
       title: "Email Tags & Organization",
-      description: "Organize your emails with smart tagging system. Categorize and manage your temporary addresses efficiently.",
+      description: "Organize your emails with smart tagging system. Categorize and manage your anonymous addresses efficiently.",
       color: "secondary",
       image: "/images/email-tags.png",
       benefits: [
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
     {
       icon: ArrowLeft,
       title: "Bulk Address Creation",
-      description: "Create multiple ShieldMail addresses at once for different purposes. Streamline your privacy protection workflow.",
+      description: "Create multiple anonymous ShieldMail addresses at once for different purposes. Streamline your privacy protection workflow.",
       color: "green",
       image: "/images/bulk-creation.png",
       benefits: [
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
     {
       icon: ShieldCheck,
       title: "Transfer & Management",
-      description: "Transfer ownership of ShieldMail addresses and manage forwarding settings with advanced controls.",
+      description: "Transfer ownership of anonymous ShieldMail addresses and manage forwarding settings with advanced controls.",
       color: "yellow",
       image: "/images/transfer-management.png",
       benefits: [
@@ -65,8 +65,8 @@ const FeaturesSection = () => {
     },
     {
       icon: Settings,
-      title: "Manage Your Burners",
-      description: "Comprehensive dashboard to manage all your temporary email addresses with detailed analytics and controls.",
+      title: "Manage Your Anonymous Emails",
+      description: "Comprehensive dashboard to manage all your anonymous email addresses with detailed analytics and controls.",
       color: "orange",
       image: "/images/manage-burners.png",
       benefits: [
@@ -78,7 +78,7 @@ const FeaturesSection = () => {
     {
       icon: Globe,
       title: "Custom Domains",
-      description: "Premium users can add their own domains for a personalized and professional email experience with the same privacy benefits.",
+      description: "Premium users can add their own domains for personalized anonymous email addresses with the same privacy benefits.",
       color: "purple",
       image: "/images/custom-domains.png",
       benefits: [
@@ -108,10 +108,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            <span className="gradient-text">Powerful Features</span> to Protect Your Privacy
+            <span className="gradient-text">Powerful Features</span> to Protect Your Identity
           </h2>
           <p className="text-xl text-gray-300">
-            ShieldMail offers a comprehensive suite of tools designed to keep your real email address private and your inbox clean.
+            ShieldMail offers a comprehensive suite of tools designed to keep your real email address private and your identity protected.
           </p>
         </div>
         

@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Your real email address (for forwarding purposes)</li>
                     <li>Account credentials (username and encrypted password)</li>
-                    <li>ShieldMail addresses you create</li>
+                    <li>Anonymous ShieldMail addresses you create</li>
                     <li>Basic usage statistics (number of emails forwarded, addresses created)</li>
                     <li>Technical information (IP address, browser type, device information)</li>
                   </ul>

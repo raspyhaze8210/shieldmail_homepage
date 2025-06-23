@@ -7,15 +7,15 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">Protect Your Privacy</span> with Temporary Email Addresses
+            <span className="gradient-text">Protect Your Identity</span> with Anonymous Email Addresses
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            ShieldMail creates disposable email addresses that shield your real inbox from spam, data breaches, and unwanted messages.
+            ShieldMail creates real anonymous email addresses that shield your identity from spam, data breaches, and unwanted tracking while forwarding to your real inbox.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a href="https://app.shieldmail.site/auth" className="w-full sm:w-auto bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/20 flex items-center justify-center space-x-2">
               <Shield size={20} />
-              <span>Create Free Account</span>
+              <span>Create Anonymous Email</span>
             </a>
             <a href="#how-it-works" className="w-full sm:w-auto bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 text-white font-medium py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2">
               <ArrowRight size={20} />
@@ -42,10 +42,10 @@ const HeroSection = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-white mb-3">
-              <span className="gradient-text">Email Preview</span>
+              <span className="gradient-text">Anonymous Email in Action</span>
             </h3>
             <p className="text-gray-400">
-              See how emails are forwarded and managed in real-time
+              See how your anonymous emails work seamlessly with real forwarding
             </p>
           </div>
           
@@ -56,7 +56,7 @@ const HeroSection = () => {
                   <Shield className="text-primary-400" size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-400">Your ShieldMail address:</p>
+                  <p className="text-sm text-gray-400">Your anonymous ShieldMail:</p>
                   <p className="text-lg font-mono text-primary-400 font-medium">swift.guard123@shieldmail.site</p>
                 </div>
               </div>
@@ -102,7 +102,7 @@ const HeroSection = () => {
                     </button>
                   </div>
                   <div className="text-sm text-gray-400">
-                    Expires in: <span className="text-primary-400 font-medium">24 hours</span>
+                    Identity: <span className="text-primary-400 font-medium">Protected</span>
                   </div>
                 </div>
               </div>
@@ -115,11 +115,11 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                <span>Spam filtered</span>
+                <span>Identity protected</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                <span>Privacy protected</span>
+                <span>Real email address</span>
               </div>
             </div>
           </div>

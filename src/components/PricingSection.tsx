@@ -29,7 +29,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />
-                  <span className="text-gray-300">Up to 10 active ShieldMail addresses</span>
+                  <span className="text-gray-300">Up to 10 active anonymous addresses</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />
@@ -49,7 +49,7 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <X className="text-red-400 mt-0.5" size={20} />
-                  <span className="text-gray-400">Reply with ShieldMail</span>
+                  <span className="text-gray-400">Reply with anonymous address</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <X className="text-red-400 mt-0.5" size={20} />
@@ -82,7 +82,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />
-                  <span className="text-gray-200"><strong>Unlimited</strong> ShieldMail addresses</span>
+                  <span className="text-gray-200"><strong>Unlimited</strong> anonymous addresses</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />
@@ -102,7 +102,7 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />
-                  <span className="text-gray-200">Reply with ShieldMail</span>
+                  <span className="text-gray-200">Reply with anonymous address</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="text-green-400 mt-0.5" size={20} />

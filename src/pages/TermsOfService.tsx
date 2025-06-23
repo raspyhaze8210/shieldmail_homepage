@@ -37,10 +37,10 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-bold text-white mb-4">2. Description of Service</h2>
                 <div className="text-gray-300 space-y-4">
                   <p>
-                    ShieldMail provides temporary email address services that forward emails to your real email address while protecting your privacy. The service includes:
+                    ShieldMail provides anonymous email address services that forward emails to your real email address while protecting your identity. The service includes:
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Creation of disposable email addresses</li>
+                    <li>Creation of anonymous email addresses</li>
                     <li>Email forwarding to your real email address</li>
                     <li>Spam protection and filtering</li>
                     <li>Email management dashboard</li>
